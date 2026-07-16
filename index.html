@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08051b">
+  <title>El universo de Greybi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" role="status" aria-label="Preparando el viaje"><div class="loader-orbit"><i></i></div><p>Preparando el universo</p></div>
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+  <div class="galaxy-memory" aria-hidden="true"></div>
+  <div class="cosmic-haze" aria-hidden="true"></div>
+  <img class="gerbera gerbera-one" src="assets/gerberas.png" alt="" aria-hidden="true">
+  <img class="gerbera gerbera-two" src="assets/gerberas.png" alt="" aria-hidden="true">
+  <img class="gerbera gerbera-three" src="assets/gerberas.png" alt="" aria-hidden="true">
+  <img class="gerbera gerbera-four" src="assets/gerberas.png" alt="" aria-hidden="true">
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Volver al inicio"><span>✦</span> GREYBI</a>
+    <nav><a href="#inicio">Inicio</a><a href="#recorrido">Recorrido</a></nav>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Activar música ambiental" aria-pressed="false"><span class="sound-icon">♪</span><span class="sound-label">Ambiente</span></button>
+  </header>
+
+  <aside class="audio-panel" id="audioPanel" aria-label="Controles de ambiente">
+    <button id="playPause" type="button" aria-label="Reproducir música">▶</button>
+    <button id="mute" type="button" aria-label="Silenciar música">⌁</button>
+    <input id="volume" type="range" min="0" max="100" value="38" aria-label="Volumen">
+  </aside>
+
+  <main id="recorrido">
+    <section class="hero scene" id="inicio">
+      <div class="memory-stack" aria-label="Recuerdos de Greybi">
+        <img src="assets/retrato-pintura.jpg" alt="Retrato de Greybi" loading="eager">
+        <img src="assets/flores-rosa.jpeg" alt="Greybi con flores" loading="eager">
+        <img src="assets/retrato-negro.jpg" alt="Greybi sonriendo" loading="eager">
+      </div>
+      <div class="letter-stage">
+        <div class="hero-message"><p>Hoy celebramos cada instante<br>que nos ha acercado.</p><strong>Te quiero profundamente.</strong><span>♥</span></div>
+        <article class="parchment">
+          <span class="ornament">♡ ───── ✦ ───── ♡</span>
+          <h1>Mi Greybi,</h1>
+          <p>Hay personas que hacen que el mundo se sienta más bonito, y tú eres una de ellas. Llegaste con esa manera tan tuya de ser fuerte, dulce y completamente auténtica.</p>
+          <p>Admiro tu mente, tu nobleza, tu forma de luchar por lo que sueñas y la calma que dejas en todo lo que tocas. Me encanta tu sonrisa, tu mirada y ese corazón enorme con el que cuidas a quienes amas.</p>
+          <p>Gracias por existir, por dejarme conocerte y por hacer que cada día tenga una razón más para sentirse especial.</p>
+          <div class="letter-sign">Te quiero mucho, Greybi<br><small>con todo mi cariño</small></div>
+        </article>
+        <a class="explore" href="#frase-1"><span>Comenzar el viaje</span><b>↓</b></a>
+      </div>
+      <div class="film-strip" aria-label="Momentos especiales">
+        <img src="assets/detalle-ramo.jpeg" alt="Detalle de flores" loading="eager">
+        <img src="assets/retrato-natural.jpeg" alt="Greybi" loading="eager">
+        <img src="assets/retrato-azul.jpeg" alt="Greybi de azul" loading="eager">
+        <img src="assets/flores-rosa.jpeg" alt="Greybi con un ramo" loading="eager">
+      </div>
+      <ul class="love-list" aria-label="Lo que siento"><li>Me haces feliz</li><li>Me inspiras cada día</li><li>Eres mi calma</li><li>Mi persona favorita</li></ul>
+      <p class="scroll-note">DESLIZA PARA CONTINUAR <span></span></p>
+    </section>
+    <div id="phrases"></div>
+    <section class="closing scene">
+      <div class="closing-card glass">
+        <p class="kicker">Y AÚN QUEDAN ESTRELLAS</p>
+        <h2>Gracias por ser<br><em>exactamente tú.</em></h2>
+        <p>Este universo siempre tendrá un lugar que lleva tu nombre, Greybi.</p>
+        <button class="explore" id="backTop" type="button"><span>Volver al comienzo</span><b>↑</b></button>
+      </div>
+    </section>
+  </main>
+
+  <img class="flower flower-left" src="assets/flor-izquierda.png" alt="" aria-hidden="true">
+  <img class="flower flower-right" src="assets/flor-derecha.png" alt="" aria-hidden="true">
+  <script src="script.js"></script>
+</body>
+</html>
